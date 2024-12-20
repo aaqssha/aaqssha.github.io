@@ -1,0 +1,277 @@
+/* Body */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  color: #ffffff;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header .logo p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #ffffff;
+  color: #4caf50;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+  background: url("images/hero-dark.jpg") no-repeat center center/cover;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  background: #4caf50;
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #4caf50;
+  transform: scale(1.1);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  #hero h2 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+  }
+}
+
+/* Blog Section */
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+article {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-thumbnail {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk fitur pencarian */
+#searchInput {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #5a5959;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #4caf50;
+}
+
+#searchInput::placeholder {
+  color: #5a5959;
+  font-weight: bold;
+}
+
+#searchInput:focus {
+  border-color: #4caf50;
+  font-weight: bold;
+  outline: none;
+  color: #4caf50;
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  color: #b0b0b0;
+  text-align: center;
+  padding: 16px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #81c784;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(45deg, #1e1e1e, #333);
+  color: #b0b0b0;
+  text-align: center;
+  padding: 24px 0;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #81c784;
+  margin: 0 8px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #4caf50;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .blog-header h2 {
+    font-size: 28px;
+  }
+
+  .blog-thumbnail {
+    max-width: 150px;
+  }
+}
+
+/* Back Button */
+.back-button a {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: #4caf50;
+  font-family: Arial, sans-serif;
+}
+
+.back-button span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Centering Section */
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+.social-media-container a {
+  margin: 0 7px;
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
+}
